@@ -3,7 +3,6 @@
 ![](https://img-blog.csdnimg.cn/img_convert/a5eeb478acd07ce15ff8352ff766c888.webp?x-oss-process=image/format,png)
 
 ```javascript
-
 vue生命周期就是`vue实例从创建到销毁的整个过程`我们称之为vue的生命周期,通过vue的生命周期我们可以在不同的阶段进行不同的逻辑操作. vue生命周期常用的钩子函数一共有8个，分别对应的钩子函数为beforeCreate 创建前、 created创建后、beforeMount 挂载前、mounted挂载后、beforeUpdate 更新前、updated更新后、beforeDestory 销毁前、 destoryed销毁后, `页面一开始加载的时候就会触发创建前后和挂载前后的钩子函数`, 而更新的钩子函数需要当我们改变data的时候才能触发,销毁的钩子函数必须得当组件进行切换的时候就会进行销毁.在项目开发过程中,我经常使用到的钩子函数有created,我们经常`在created进行数据请求,或者获取本地存储的数据`,还有一些其他的操作. 除了created还有mounted,我们经常`在mounted里面获取dom元素` (有时候也存在获取不到dom元素的情况,这个时候我们一般用$nextTick方法来解决).
 
 每个生命周期钩子具体发生的事情：
@@ -50,7 +49,6 @@ vue生命周期就是`vue实例从创建到销毁的整个过程`我们称之为
 补充:
 
 ```javascript
-
 父组件和子组件生命周期钩子执行顺序:
 `加载渲染过程`:
 父 beforeCreate -> 父 created -> 父 beforeMount -> 子 beforeCreate -> 子 created -> 子 beforeMount -> 子 mounted -> 父 mounted
